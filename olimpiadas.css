@@ -73,14 +73,14 @@ input[type = checkbox]{
 }
 
 .hamburguer{
-    display: auto;
-    user-select: auto;
+    display: none;
+    user-select: none;
     font-size: 32px;
-    display: block;
+    
 }
 
 @media (max-width: 768px){
-    .Menu {
+    .menu {
     display:none;
     position: absolute;
     background-color:teal;
@@ -91,17 +91,17 @@ input[type = checkbox]{
     
     }
     
-    .Menu li:hover {
+    .menu li:hover {
     display: inline-block;
     background-color:#4c9e9e;
     transition: 0.3s ease;
     }
     
-    .Menu li + li {
+    .menu li + li {
         margin-top: 12px;
     }
         
-    input[type=checkbox]:checked ~ .Menu{ 
+    input[type=checkbox]:checked ~ .menu{ 
         display: block;
     }
     .hamburguer{
