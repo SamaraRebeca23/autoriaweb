@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    display: flex;
+    max-height: 140px;
+    justify-content: end;
+    background: linear-gradient(to right,  #3706aa,  #08d45a);
+    color: white;
+    
+}
+header p{
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3em;
+
+}
+
+nav{
+    display: flex;
+}
+.logo-olimpiadas{
+    max-height: 100px;
+    max-width: 100px;
+    margin: 15px;
+}
+li{
+    display: inline-block;
+    padding: 40px 50px;
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+article{
+    border: solid  #3706aa 1px;
+    margin: 5px;
+    max-width: 380px;
+}
+
+figure{
+    margin: 0;
+}
+
+figcaption{
+    font-size: small;
+    padding: 5px;
+    color: #555;
+    
+}
+
+header{
+    color: #3706aa;
+    font-size: 17px;
+    padding: 7px;
+}
+
+input[type = checkbox]{
+    display: none;
+}
+
+.hamburguer{
+    display: auto;
+    user-select: auto;
+    font-size: 32px;
+    display: block;
+}
+
+@media (max-width: 768px){
+    .Menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    
+    }
+    
+    .Menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+    }
+    
+    .Menu li + li {
+        margin-top: 12px;
+    }
+        
+    input[type=checkbox]:checked ~ .Menu{ 
+        display: block;
+    }
+    .hamburguer{
+        display: block;
+    }
+
+}

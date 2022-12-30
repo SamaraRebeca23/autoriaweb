@@ -1,0 +1,36 @@
+.titulo{
+    display: flex;
+    max-height: 140px;
+    justify-content: end;
+    background: linear-gradient(to right,  #3706aa,  #08d45a);
+    color: white;
+    
+}
+header p{
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+nav{
+    display: flex;
+}
+.logo-olimpiadas{
+    max-height: 100px;
+    max-width: 100px;
+    margin: 15px;
+}
+li{
+    display: inline-block;
+    padding: 40px 50px;
+    list-style: none;
+}
+input[type = checkbox]{
+    display: none;
+}
+.hamburguer{
+    display: auto;
+    user-select: auto;
+    font-size: 32px;
+    display: block;
+}
