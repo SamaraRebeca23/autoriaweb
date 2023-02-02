@@ -110,3 +110,42 @@ input[type = checkbox]{
     }
 
 }
+.dark{
+    background-color:#03001C;
+    color: #301E67; 
+}
+.light{
+    background-color: #5B8FB9;
+    color: #B6EADA; 
+}
+.switch input{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+.switch label{
+    
+    display: flex; align-items: left;
+    position: relative; background-color: aliceblue;
+    border: 5px;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 2px;
+    cursor: pointer;
+    transition: 2px;
+
+}
+switch label::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 4px;
+    width: 29px;
+    height: 29px;
+    background-color: #03001C;
+    border-radius: 50%;
+    transition: left;
+}
+
+.switch input:checked+label{background-color: black}
+.switch input:checked+label::after{left:calc(100%-30px)}
